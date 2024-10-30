@@ -57,11 +57,13 @@ function updateDots(index) {
 
 // Écouteurs d'événements sur les flèches
 prevButton.addEventListener("click", () => {
+  console.log("Flèche gauche cliquée");
   currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
   showImage(currentIndex);
 });
 
 nextButton.addEventListener("click", () => {
+  console.log("Flèche droite cliquée");
   currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
   showImage(currentIndex);
 });
